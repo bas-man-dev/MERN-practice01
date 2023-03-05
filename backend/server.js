@@ -4,7 +4,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const workoutRoutes = require('./routes/workouts')
 // fixed an  error here: https://stackoverflow.com/questions/74711770/how-to-fix-mongoose-deprecation-warning-the-strictquery
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', false); // could also set to true but still had errors.
 // express app
 const app = express()
 
